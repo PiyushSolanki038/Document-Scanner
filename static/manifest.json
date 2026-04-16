@@ -1,0 +1,19 @@
+{
+    "name": "DocScan Pro - AI Document Scanner",
+    "short_name": "DocScan Pro",
+    "description": "Professional document scanner powered by OpenCV. Scan, detect, and digitize documents instantly using your camera.",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "background_color": "#0a0a0f",
+    "theme_color": "#7C5CFC",
+    "categories": ["productivity", "utilities"],
+    "icons": [
+        {
+            "src": "/static/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
