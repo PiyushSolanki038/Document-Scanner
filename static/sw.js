@@ -3,7 +3,7 @@
  * Caches static assets for offline shell, while API calls always go to network.
  */
 
-const CACHE_NAME = "docscan-v3";
+const CACHE_NAME = "docscan-v4";
 const STATIC_ASSETS = [
     "/",
     "/static/style.css",
