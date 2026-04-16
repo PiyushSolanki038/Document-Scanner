@@ -430,6 +430,25 @@ main {
     white-space: nowrap;
 }
 
+.btn-icon {
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .btn-primary {
     background: var(--accent);
     color: white;
@@ -1279,15 +1298,18 @@ body.lightbox-open {
 
     .result-actions {
         display: flex;
-        flex-direction: column;
+        flex-direction: row; /* Keep icons in a row on mobile */
+        flex-wrap: nowrap;
         width: 100%;
-        gap: 10px;
+        gap: 8px;
     }
 
-    .result-actions .btn {
-        width: 100%;
-        justify-content: center;
-        padding: 14px; /* Larger touch target */
+    .result-actions #new-scan-btn {
+        flex: 1; /* Make New Scan take available space */
+    }
+
+    .result-actions .btn-icon {
+        flex-shrink: 0; /* Icons don't shrink */
     }
 
     .result-grid {
